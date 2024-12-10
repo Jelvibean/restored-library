@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import styles from "./Scenario.module.scss";
 
+//This is the Modal Component function.
 function Scenario({ onClose }) {
-  // Sit listening to see if ESC button gets clicked to close.
+  // Sits listening to see if ESC button gets clicked to close.
+  // This will be called after the render.
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
@@ -10,18 +12,18 @@ function Scenario({ onClose }) {
       }
     };
 
+    // listens to any key pressed and then calls handleKeyDown from above to see if its Escape.
     window.addEventListener("keydown", handleKeyDown);
 
     return () => {
+      //Good to clean so you dont have this firing in ever render.
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, [onClose]);
 
   // Close the modal when the box is clicked
-  const handleClick = (e) => {
-    if (e.target === e.currentTarget) {
-      onClose();
-    }
+  const handleClick = () => {
+    onClose();
   };
 
   return (

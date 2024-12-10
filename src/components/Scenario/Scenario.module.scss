@@ -1,16 +1,16 @@
+//Didnt have time to make it pretty
 .box {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
-  border: 2px solid #000;
+  height: 500px;
 }
 
 .modal {
   padding-top: 20px;
   width: 500px;
   height: 330px;
-  color: #000;
+  color: red;
   background-color: #efefef;
   text-align: center;
 }
