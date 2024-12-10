@@ -2,35 +2,32 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+Run 'yarn' to tech and install all dependencies necessary for running the application.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Starting the APP
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run 'yarn dev' once up and running, you should be able to see your app at:
+"http://localhost:3000/"
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Helpful Commands:
 
-## Learn More
+yarn add <your package>
+yarn add <your package> --dev
+yarn remove <your package>
+yarn build
 
-To learn more about Next.js, take a look at the following resources:
+## Notes on the APP
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-I decided to create the project using Nextjs for a few reasons:
+Because I am familiar with this environment and like it. 🙂
+Next.js has Babel and Webpack under the hood, so there is no need to worry about explicitly setting them up.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-Next.js offers some cool features Server-Side Rendering (SSR), Static Site Generation, Routing, among other features I’ve yet to work with.
+I could have gone the route of just creating a react project but I would have needed to add Babel and Webpack separately. Plus when it comes to routing, you would need to manage routing manually, and depend on reactRouter for this.
 
-## Deploy on Vercel
+-I installed Yarn in the application. Reasons are because I am used to it and because from my learnings I believe it offers faster installation, reliability, consistency and security.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-Some of the dependencies I decided to add
+Eslint, prettier, sass, stylelint, typescript, and yest.

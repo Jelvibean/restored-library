@@ -1,0 +1,29 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border: 2px solid #000;
+}
+
+.modal {
+  padding-top: 20px;
+  width: 500px;
+  height: 330px;
+  color: #000;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.heading {
+  margin: "0 0 10px 0";
+}
+
+.closeButton {
+  width: 50px;
+  height: 30px;
+  padding: "12px 12px";
+  background-color: rgb(0, 22, 119);
+  color: "white";
+  cursor: "pointer";
+}

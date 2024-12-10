@@ -1,0 +1,14 @@
+.startbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border: 2px solid #000;
+
+  button {
+    width: 500px;
+    height: 30px;
+    color: #000;
+    background-color: #efefef;
+  }
+}
