@@ -12,7 +12,7 @@ function App() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.startbutton}>
-        <button onClick={handleOpenModal}>Open My Modal</button>
+        <button onClick={handleOpenModal}>Open Modal</button>
       </div>
       {isModalOpen && <Scenario onClose={handleCloseModal} />}
     </div>
